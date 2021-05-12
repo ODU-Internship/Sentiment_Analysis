@@ -37,14 +37,13 @@ def get_predictions(text_list):
     return predictions
 
 
-model = load_model()
-# Send text in form of list
-pred_sentences = input('enter text to predict seperated by comma: ')
-pred_sentences = pred_sentences.split(',')
-pred_sentences = [i.strip() for i in pred_sentences]
-result = get_predictions(pred_sentences)
-print(result)
-
+# model = load_model()
+# # Send text in form of list
+# pred_sentences = input('enter text to predict seperated by comma: ')
+# pred_sentences = pred_sentences.split(',')
+# pred_sentences = [i.strip() for i in pred_sentences]
+# result = get_predictions(pred_sentences)
+# print(result)
 
 app = Flask(__name__)
 api = Api(app)
