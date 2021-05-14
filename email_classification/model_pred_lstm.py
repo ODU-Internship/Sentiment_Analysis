@@ -44,7 +44,7 @@ def process_emails(text_list,col=col,df=df):
 
 def make_model(embed_dim = embed_dim,lstm_out = lstm_out):
   model = Sequential()
-  model.add(Embedding(max_fatures, embed_dim,input_length = 128))
+  model.add(Embedding(max_fatures, embed_dim,input_length = 899))
   model.add(SpatialDropout1D(0.4))
   model.add(LSTM(lstm_out, dropout=0.2, recurrent_dropout=0.2))
   model.add(Dense(2,activation='softmax'))
