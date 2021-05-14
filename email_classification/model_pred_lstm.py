@@ -53,7 +53,7 @@ def make_model(embed_dim = embed_dim,lstm_out = lstm_out):
   return model
 
 model2 = make_model()
-checkpoint_filepath = 'trained_weights/'
+checkpoint_filepath = 'training_1/cp.ckpt'
 model2.load_weights(checkpoint_filepath)
 
 def get_predictions(X, model2=model2):
